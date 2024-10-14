@@ -1,0 +1,255 @@
+body {
+    font-family: Helvetica, sans-serif, Arial;
+    padding: 0%;
+    margin: 0%;
+}
+
+#top {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    /* background-color: rgb(249, 249, 249); */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: background-color 1s ease;
+}
+
+#top.white {
+    background-color: rgb(249, 249, 249);
+}
+
+#top h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem; 
+    font-weight: 700;  
+    letter-spacing: 1px; 
+    color: #33dde9;  
+    padding: 0% 1%;
+    width: 100%;
+    margin: 1% 1%;
+}
+
+#message-top {
+    display: flex;
+    justify-content: center;
+}
+
+#top-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+
+#top-right-top {
+    display: flex;
+    justify-content: space-around;
+}
+
+#top-right-bottom {
+    display: flex;
+    justify-content: space-around;
+    padding: 1% 0%;
+}
+
+#top-right-bottom a {
+    color: rgb(35, 32, 32);
+    text-decoration: none;
+}
+
+#hr-top {
+    width: 180%;
+}
+
+#schedule, #phone {
+    display: flex;
+    width: 30%;
+}
+
+#schedule p, #phone p {
+    padding: 0% 10%;
+}
+
+#schedule a, #phone a {
+    padding: 0% 0% 0% 0%;
+    margin-bottom: 0%;
+    display: flex;
+    align-items: center;
+}
+
+#icons a i{
+    padding: 5%;
+}
+
+#icons {
+    width: 30%;
+}
+
+#icons a, #schedule a, #phone a {
+    color: rgb(35, 32, 32);
+}
+
+#intro-title {
+    background-image: url(https://wallpapers-clan.com/wp-content/uploads/2024/02/aesthetic-blue-sky-clouds-desktop-wallpaper-preview.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+
+}
+
+#intro-title header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-logo {
+    border-radius: 50%;
+    width: 60%;
+}
+
+#intro-title #image-family {
+    margin-top: 10%;
+    width: 18%;
+}
+
+#intro-title #nav-logo-intro {
+    margin-top: 0%;
+    width: 12%;
+    border-radius: 50%;
+}
+
+#intro-buttons {
+    width: 40rem;
+    display: flex;
+    justify-content: center;
+}
+
+#intro-title a {
+    width: 50%;
+    padding: 5%;
+    margin: 3%;
+    text-decoration: none;
+    background-color: rgb(147, 64, 147);
+    color: rgb(247, 250, 253);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#infant-schedule {
+    background-image: 
+        linear-gradient(rgb(193, 10, 193), rgb(195, 6, 195)),
+        url(https://wallpapercat.com/w/full/7/8/9/161250-3840x2160-desktop-4k-the-little-prince-wallpaper-image.jpg);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 30vh;
+    width: 100%;
+    color: rgb(247, 250, 253);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#infant-schedule div {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-size: 1.1rem;
+    border: rgb(247, 250, 253) solid;
+    padding: 1%;
+}
+
+#infant-schedule a {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(247, 250, 253);
+    padding: 1%;
+    border: rgb(247, 250, 253) solid;
+    font-size: 1.4rem;
+}
+#intro-grid {
+    background-color: rgb(249, 249, 249);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 150vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a b"
+                         "c c" ;
+}
+
+#paragraph-intro {
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin-left: 30%;
+    height: 20%;
+}
+
+#paragraph-intro h2 {
+    color: rgb(193, 10, 193);
+    line-height: 1.2;
+    text-align: center;
+    padding-top: 5%;
+}
+
+#paragraph-intro p {
+    line-height: 1.5;
+}
+
+#paragraph-intro a {
+    line-height: 1.5;
+    text-decoration: none;
+    background-color: #f4bc71;
+    padding: 4%;
+    border-radius: 10px;
+    color: black;
+}
+
+#intro-image-family {
+    grid-area: b;
+    height: 20%;
+}
+
+#intro-image-family img {
+    width: 65%;
+    padding: 5%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+
+#philosophy {
+    grid-area: c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+#philosophy h2 {
+    color: rgb(193, 10, 193);
+    margin-top: 0%;
+}
+
+#philosophy p {
+    width: 50%;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#philosophy iframe {
+    width: 60%;
+    height: 550px;
+}

@@ -129,7 +129,7 @@ body {
     justify-content: center;
 }
 
-#intro-title a {
+#intro-title a, #contact-grid div:first-of-type a {
     width: 50%;
     padding: 5%;
     margin: 3%;
@@ -165,7 +165,7 @@ body {
     padding: 1%;
 }
 
-#infant-schedule a {
+#infant-schedule a, #busy-schedule a {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     text-decoration: none;
@@ -208,7 +208,7 @@ body {
     line-height: 1.5;
 }
 
-#paragraph-intro a {
+#paragraph-intro a, #clinic-focus-grid a {
     line-height: 1.5;
     text-decoration: none;
     background-color: #f4bc71;
@@ -252,4 +252,402 @@ body {
 #philosophy iframe {
     width: 60%;
     height: 550px;
+}
+
+#busy-schedule {
+    background-color: rgb(147, 64, 147);
+    height: 30vh;
+    color: rgb(249, 249, 249);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#busy-schedule div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#busy-schedule h2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-size: 2rem;
+    border: rgb(247, 250, 253) solid;
+    padding: 1%;
+}
+
+#clinic-focus-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 1%;
+    grid-template-areas: "d d e e"
+                         "f g e e"
+                         "h h h h"
+                         "i i j j"
+                         "k k l l" ;
+    justify-items: center;
+    align-items: center;
+    object-fit: cover;
+    max-width: 830px;
+    margin-left: 25%;
+    height: 200vh;
+}
+
+#image-clinic-1 {
+    grid-area: d;
+    width: 540px;
+}
+
+#image-clinic-2 {
+    grid-area: e;
+    width: 490px;
+    height: 790px;
+    padding-left: 10px;
+}
+
+#image-clinic-3 {
+    grid-area: f;
+    width: 244px;
+    max-height: 310px;
+}
+
+#image-clinic-4 {
+    grid-area: g;
+    width: 244px;
+    max-height: 310px;
+}
+
+#noble {
+    grid-area: h;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#noble h2 {
+    color: rgb(193, 10, 193);
+}
+
+#noble p {
+    line-height: 1.5;
+}
+
+#for-everyone {
+    grid-area: i;
+    line-height: 1.5;
+}
+
+#emergency {
+    grid-area: j;
+    line-height: 1.5;
+}
+
+#infant {
+    grid-area: k;
+    line-height: 1.5;
+}
+
+#special-health {
+    grid-area: l;
+    line-height: 1.5;
+}
+
+#insurance {
+    background-image: 
+        linear-gradient(rgb(193, 10, 193), rgb(195, 6, 195)), 
+        url(https://drdawson.com/custom/modules/gorgon_interior_banner/images/team2.jpg);
+    background-blend-mode: overlay;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#insurance div, #insurance a, #special-needs div, #special-needs a {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-size: 1.4rem;
+    border: rgb(247, 250, 253) solid;
+    padding: 1%;
+    text-decoration: none;
+    color: rgb(247, 250, 253);
+}
+
+#meet-doctors-grid {
+    background-color: rgb(249, 249, 249);
+    height: 150vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "m m"
+                         "n o"
+                         "p q"
+                         "r r";
+}
+
+#meet-doctors-grid h2 {
+    grid-area: m;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(195, 6, 195);
+    margin: 4% 0%;
+}
+
+#meet-doctors-grid a {
+    line-height: 1.5;
+    text-decoration: none;
+    background-color: #f4bc71;
+    padding: 4%;
+    border-radius: 10px;
+    color: black;
+    width:14%;
+}
+
+#Lando {
+    grid-area: n;
+    width: 563px;
+    margin-left: 30%;
+}
+
+#Lando-div {
+    grid-area: o;
+    margin-right: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+}
+
+#Lando-div h3 {
+    display: flex;
+    justify-content: center;
+    color: rgb(195, 6, 195);
+    font-size: 2rem;
+}
+
+#Barbara-div {
+    grid-area: p;
+    margin-left: 30%;
+    margin-top: 10%;
+    padding-right: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+}
+
+#Barbara-div h3 {
+    display: flex;
+    justify-content: center;
+    color: rgb(195, 6, 195);
+    font-size: 2rem;
+}
+
+#Barbara {
+    grid-area: q;
+    padding-top: 5%;
+}
+
+#logos-certs {
+    grid-area: r;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+}
+
+#logos-certs img {
+    width: 20%;
+    height: 50%;
+    padding: 3%;
+}
+
+#special-needs {
+    background-image: linear-gradient(rgb(193, 10, 193), rgb(195, 6, 195)), 
+        url(https://drpattymiami.com/wp-content/uploads/special-needs-banner-img.webp);
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#Reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249, 249, 249);
+
+}
+
+#Reviews h2 {
+    color: rgb(195, 6, 195);
+}
+
+#Reviews div {
+    display: flex;
+    margin: 0% 6%;
+    line-height: 1.5;
+}
+
+#Reviews div div {
+    display: flex;
+    flex-direction: column;
+}
+
+#Reviews a {
+    text-decoration: none;
+    background-color: #f4bc71;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 10px;
+    color: black;
+}
+
+#schedule-appointment {
+    background-image: linear-gradient(rgb(193, 10, 193), rgb(195, 6, 195)),
+    url(https://www.parkavepd.com/wp-content/uploads/2016/05/compressed-image-for-pilla.jpeg);
+    background-blend-mode: overlay;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#schedule-appointment a {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-size: 1.4rem;
+    border: rgb(247, 250, 253) solid;
+    padding: 1%;
+    text-decoration: none;
+    color: rgb(247, 250, 253);
+}
+
+#contact-grid {
+    background-color: rgb(247, 250, 253);
+    height: 105vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "s s t t u u"
+                         "v v v w w w";
+    line-height: 1.5;
+}
+
+#contact-grid div:first-of-type {
+    grid-area: s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(147, 64, 147);
+    margin-top: 0%;
+}
+
+#contact-grid div:first-of-type img {
+    width: 40%;
+}
+
+#contact-grid div:nth-child(2) {
+    margin-top: 6%;
+    margin-left: 20%;
+    grid-area: t;
+}
+
+#contact-grid div:nth-child(2) h3, #contact-grid div:nth-child(3) h3 {
+    color: rgb(147, 64, 147);
+}
+
+#contact-grid div:nth-child(3) {
+    margin-top: 6%;
+    grid-area: u;
+}
+
+#contact-grid div:nth-child(4) {
+    grid-area: v;
+    padding: 4%;
+}
+
+#contact-grid div:nth-child(4) iframe {
+    width: 60%;
+    padding-left: 20%;
+    height: 100%;
+}
+
+#contact-grid div:nth-child(5) {
+    grid-area: w;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+#contact-grid div:nth-child(5) * {
+    margin: 1%;
+}
+
+#contact-grid div:nth-child(5) a {
+    text-decoration: none;
+}
+
+
+#contact-grid div:nth-child(5) * {
+    margin: 1%;
+}
+
+#contact-grid div:nth-child(5) h3 {
+    color: rgb(147, 64, 147);
+}
+
+#contact-grid div:nth-child(5) a {
+    text-decoration: none;
+    background-color: #f4bc71;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 10px;
+    color: black;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+#contact-grid div:nth-child(5) input {
+    height: 8%;
+    font-size: 1.3rem;
+}
+
+#contact-grid div:nth-child(5) input {
+    color: #333; 
+    opacity: 1;
+}
+
+#contact-grid div:nth-child(5) input:last-of-type {
+    height: 20%;
+}
+
+footer {
+    background-color: #f4bc71;
+    margin: 0%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

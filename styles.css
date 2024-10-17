@@ -108,8 +108,42 @@ body {
 }
 
 #nav-logo {
-    border-radius: 50%;
-    width: 60%;
+    border-radius: 100%;
+    width: 7%;
+}
+
+#top-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 1%
+}
+
+#top-logo p:first-of-type {
+    margin: 0%;
+    color: rgb(147, 64, 147);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#top-logo p:last-child {
+    margin: 0%;
+    color: #f4bc71;
+    font-size: 1.1rem;
+}
+
+#intro-title header p:first-of-type {
+    margin: 0%;
+    color: rgb(147, 64, 147);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#intro-title header p:last-of-type {
+    margin: 0%;
+    color: #f4bc71;
+    font-size: 2.1rem;
 }
 
 #intro-title #image-family {
@@ -296,28 +330,31 @@ body {
     height: 200vh;
 }
 
+/* #clinic-focus-grid > div {
+    border: 1px solid red;
+} */
+
+#clinic-focus-grid img {
+    width: 100%;
+}
+
 #image-clinic-1 {
     grid-area: d;
-    width: 540px;
 }
 
 #image-clinic-2 {
     grid-area: e;
-    width: 490px;
-    height: 790px;
-    padding-left: 10px;
+    margin-top: 60px;
+    margin-left: 90px;
+    width: 120%;
 }
 
 #image-clinic-3 {
     grid-area: f;
-    width: 244px;
-    max-height: 310px;
 }
 
 #image-clinic-4 {
     grid-area: g;
-    width: 244px;
-    max-height: 310px;
 }
 
 #noble {
@@ -355,6 +392,10 @@ body {
 #special-health {
     grid-area: l;
     line-height: 1.5;
+}
+
+#for-everyone img, #emergency img, #infant img, #special-health img {
+    width: 100px;
 }
 
 #insurance {
@@ -550,6 +591,22 @@ body {
     grid-template-areas: "s s t t u u"
                          "v v v w w w";
     line-height: 1.5;
+}
+
+#contact-grid img:first-of-type {
+    border-radius: 50%;
+}
+
+#contact-grid p:first-of-type {
+    margin: 0%;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#Dentestry-for-E {
+    margin: 0%;
+    font-size: 1.1rem;
+    color: #f4bc71;
 }
 
 #contact-grid div:first-of-type {
